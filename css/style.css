@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto"),
+        url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto"),
+        url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-width: 900px;
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.container {
+  width: 860px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.catalog-page {
+  background: #849d8f;
+}
+
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*align-content: space-between;*/
+  background: yellow;
+}
+
+.card {
+  width: 200px;
+  background: pink;
+}
