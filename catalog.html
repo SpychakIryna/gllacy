@@ -3,131 +3,134 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <a class="index-logo" href="index.html">
           <img src="img\logo.png" width="154" height="64" alt="logo">
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item active">
-              <a href="#">Каталог</a>
+              <a class="current" href="#">Каталог</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Доставка и оплата</a>
+              <a href="#"><span>Доставка и оплата</span></a>
             </li>
             <li class="main-nav__item">
-              <a href="#">О Компании</a>
+              <a href="#"><span>О Компании</span></a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
           <ul class="user-block__list">
             <li class="user-block__item">
-              <a href="#">Поиск по сайту</a>
+              <a href="#"></a>
             </li>
             <li class="user-block__item">
               <a href="#">Вход</a>
             </li>
             <li class="user-block__item">
-              <a href="#">Пусто</a>
+              <a class="cart-full" href="#">2 товара</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <main class="container">
-      <section class="catalog-title">
-        <h1>Сливочное мороженое</h1>
-        <ul class="breadcrumbs">
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li class="current">
-             Сливочное
-          </li>
-        </ul>
-      </section>
-      <form action="https://echo.htmlacademy.ru" method="post"><form>
+    <main>
+      <div class="container">
+        <section class="catalog-title">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-current">
+               <a href="#">Сливочное</a>
+            </li>
+          </ul>
+          <h1>Сливочное мороженое</h1>
+        </section>
+        <form action="https://echo.htmlacademy.ru" method="post"><form>
+      </div>
       <div class="card-layout">
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="orange">
+          <img class="card__image" src="img/card-1.jpg" width="200" height="200" alt="orange">
           <p class="card__price">310 Р/кг</p>
           <a class="card__description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="coffee">
+          <img class="card__image" src="img/card-2.jpg" width="200" height="200" alt="chocolate">
           <p class="card__price">380 Р/кг</p>
           <a class="card__description" href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="strawberry">
+          <img class="card__image" src="img/card-3.jpg" width="200" height="200" alt="strawberry">
           <p class="card__price">355 Р/кг</p>
           <a class="card__description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="caramel">
+          <img class="card__image" src="img/card-4.jpg" width="200" height="200" alt="caramel">
           <p class="card__price">415 Р/кг</p>
           <a class="card__description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="lingonberry">
+          <img class="card__image" src="#" width="200" height="200" alt="lingonberry">
           <p class="card__price">325 Р/кг</p>
           <a class="card__description" href="#">Сливочное с брусничным джемом</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="blueberry">
+          <img class="card__image" src="#" width="200" height="200" alt="blueberry">
           <p class="card__price">410 Р/кг</p>
           <a class="card__description" href="#">Сливочно-черничное с цельными ягодами черники</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="limon">
+          <img class="card__image" src="#" width="200" height="200" alt="limon">
           <p class="card__price">375 Р/кг</p>
           <a class="card__description" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="chocolate">
+          <img class="card__image" src="#" width="200" height="200" alt="chocolate">
           <p class="card__price">320 Р/кг</p>
           <a class="card__description" href="#">Сливочное с шоколадной стружкой</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="vanilla">
+          <img class="card__image" src="#" width="200" height="200" alt="vanilla">
           <p class="card__price">440 Р/кг</p>
           <a class="card__description" href="#">Сливочно-ванильное с кусочками шоколада</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="menthol">
+          <img class="card__image" src="#" width="200" height="200" alt="menthol">
           <p class="card__price">435 Р/кг</p>
           <a class="card__description" href="#">Сливочное с ментовым сиропом</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="black chocolate">
+          <img class="card__image" src="#" width="200" height="200" alt="black chocolate">
           <p class="card__price">355 Р/кг</p>
           <a class="card__description" href="#">Сливочное с кусочками черного шоколада</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="card">
-          <img class="card__image" src="#" width="" height="" alt="mint">
+          <img class="card__image" src="#" width="200" height="200" alt="mint">
           <p class="card__price">420 Р/кг</p>
           <a class="card__description" href="#">Сливочное с мятным сиропом</a>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn card-btn" href="#">Быстрый просмотр</a>
         </article>
       </div>
       <div class="btn-pages">
