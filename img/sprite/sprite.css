@@ -1,0 +1,107 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/*.-car-hovert {
+    width: 21px;
+    height: 20px;
+    background-position: -15px -15px;
+}
+
+.-cart {
+    width: 21px;
+    height: 20px;
+    background-position: -66px -15px;
+}*/
+
+.-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -117px -15px;
+}
+
+.-fb {
+    width: 32px;
+    height: 32px;
+    background-position: -195px -15px;
+}
+
+.-heart {
+    width: 15px;
+    height: 13px;
+    background-position: -15px -77px;
+}
+
+.-ice-cream {
+    width: 49px;
+    height: 49px;
+    background-position: -195px -77px;
+}
+
+.-insta {
+    width: 32px;
+    height: 32px;
+    background-position: -15px -156px;
+}
+
+.-leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -77px -156px;
+}
+
+/*.-log-in {
+    width: 21px;
+    height: 19px;
+    background-position: -60px -77px;
+}
+
+.-log-in-hover {
+    width: 21px;
+    height: 19px;
+    background-position: -156px -156px;
+}*/
+
+.-logo-htmlacademy {
+    width: 108px;
+    height: 38px;
+    background-position: -274px -15px;
+}
+
+.-rubl {
+    width: 31px;
+    height: 36px;
+    background-position: -274px -83px;
+}
+
+/*.-search {
+    width: 17px;
+    height: 17px;
+    background-position: -335px -83px;
+}
+
+.-search-hover {
+    width: 17px;
+    height: 17px;
+    background-position: -335px -130px;
+}*/
+
+.-term {
+    width: 48px;
+    height: 49px;
+    background-position: -207px -177px;
+}
+
+.-tw {
+    width: 33px;
+    height: 32px;
+    background-position: -285px -177px;
+}
+
+.-vk {
+    width: 32px;
+    height: 32px;
+    background-position: -348px -177px;
+}
