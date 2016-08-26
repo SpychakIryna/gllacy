@@ -1,107 +1,107 @@
-. {
+.sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-/*.-car-hovert {
+.sprite-car-hovert {
     width: 21px;
     height: 20px;
-    background-position: -15px -15px;
+    background-position: -12px -12px;
 }
 
-.-cart {
+.sprite-cart {
     width: 21px;
     height: 20px;
-    background-position: -66px -15px;
-}*/
+    background-position: -57px -12px;
+}
 
-.-cow {
+.sprite-checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: -102px -12px;
+}
+
+.sprite-cow {
     width: 48px;
     height: 49px;
-    background-position: -117px -15px;
+    background-position: -146px -12px;
 }
 
-.-fb {
+.sprite-fb {
     width: 32px;
     height: 32px;
-    background-position: -195px -15px;
+    background-position: -12px -85px;
 }
 
-.-heart {
+.sprite-heart {
     width: 15px;
     height: 13px;
-    background-position: -15px -77px;
+    background-position: -68px -85px;
 }
 
-.-ice-cream {
+.sprite-ice-cream {
     width: 49px;
     height: 49px;
-    background-position: -195px -77px;
+    background-position: -107px -85px;
 }
 
-.-insta {
+.sprite-insta {
     width: 32px;
     height: 32px;
-    background-position: -15px -156px;
+    background-position: -180px -85px;
 }
 
-.-leaf {
+.sprite-leaf {
     width: 49px;
     height: 49px;
-    background-position: -77px -156px;
+    background-position: -12px -158px;
 }
 
-/*.-log-in {
+.sprite-log-in {
     width: 21px;
     height: 19px;
-    background-position: -60px -77px;
+    background-position: -180px -141px;
 }
 
-.-log-in-hover {
+.sprite-log-in-hover {
     width: 21px;
     height: 19px;
-    background-position: -156px -156px;
-}*/
-
-.-logo-htmlacademy {
-    width: 108px;
-    height: 38px;
-    background-position: -274px -15px;
+    background-position: -85px -184px;
 }
 
-.-rubl {
+.sprite-rubl {
     width: 31px;
     height: 36px;
-    background-position: -274px -83px;
+    background-position: -218px -12px;
 }
 
-/*.-search {
+.sprite-search {
     width: 17px;
     height: 17px;
-    background-position: -335px -83px;
+    background-position: -236px -72px;
 }
 
-.-search-hover {
+.sprite-search-hover {
     width: 17px;
     height: 17px;
-    background-position: -335px -130px;
-}*/
+    background-position: -236px -113px;
+}
 
-.-term {
+.sprite-term {
     width: 48px;
     height: 49px;
-    background-position: -207px -177px;
+    background-position: -130px -184px;
 }
 
-.-tw {
+.sprite-tw {
     width: 33px;
     height: 32px;
-    background-position: -285px -177px;
+    background-position: -225px -154px;
 }
 
-.-vk {
+.sprite-vk {
     width: 32px;
     height: 32px;
-    background-position: -348px -177px;
+    background-position: -202px -210px;
 }

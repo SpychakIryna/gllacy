@@ -20,13 +20,20 @@
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="catalog.html"><span>Каталог</span></a>
+                <a class="main-nav__link" href="catalog.html"><span>Каталог</span></a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новинки</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
+                </ul>
               </li>
               <li class="main-nav__item">
-                <a href="#"><span>Доставка и оплата</span></a>
+                <a class="main-nav__link" href="#"><span>Доставка и оплата</span></a>
               </li>
               <li class="main-nav__item">
-                <a href="#"><span>О Компании</span></a>
+                <a class="main-nav__link" href="#"><span>О Компании</span></a>
               </li>
             </ul>
           </nav>
@@ -34,9 +41,23 @@
             <ul class="user-block__list">
               <li class="user-block__item">
                 <a class="search" href="#"></a>
+                <form class="find">
+                  <input type="search" placeholder="Что ищем?">
+                </form>
               </li>
               <li class="user-block__item">
                 <a class="login" href="#">Вход</a>
+                <div class="login-block">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <input type="text" name="login" placeholder="Электронная почта">
+                    <input type="password"  name="password" placeholder="Пароль">
+                    <button class="btn" type="submit">Войти</button>
+                    <div class="info-inner">
+                      <a href="#">Забыл пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
               </li>
               <li class="user-block__item">
                 <a class="cart" href="#">Пусто</a>
@@ -133,7 +154,7 @@
           <div class="news__right">
             <div class="news__content">
               <p class="mailing">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-              <form action="/echo" method="post">
+              <form class="mailing-form" action="/echo" method="post">
                 <input type="email" placeholder="Электронная почта">
                 <input class="btn" type="submit" value="Отправить">
               </form>
@@ -181,6 +202,16 @@
           </div>
         </div>
       </footer>
+      <div class="modal-block">
+        <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="modal-block-title">Мы обязательно вам ответим!</div>
+        <form class="message-form  clearfix" action="https://echo.htmlacademy.ru" method="post">
+          <input type="text" name="user-name" placeholder="Как вас зовут?" required>
+          <input type="text" name="user-mail" placeholder="Ваша почта для ответа?" required>
+          <textarea name="message" id="message-field" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
