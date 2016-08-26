@@ -16,26 +16,36 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item  active">
-              <a class="current" href="#">Каталог</a>
+              <a class="main-nav__link  current" href="#">Каталог</a>
+              <ul class="sub-menu">
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новинки</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
+              </ul>
             </li>
             <li class="main-nav__item">
-              <a href="#"><span>Доставка и оплата</span></a>
+              <a class="main-nav__link" href="#"><span>Доставка и оплата</span></a>
             </li>
             <li class="main-nav__item">
-              <a href="#"><span>О Компании</span></a>
+              <a class="main-nav__link" href="#"><span>О Компании</span></a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
           <ul class="user-block__list">
             <li class="user-block__item">
-              <a class="search" href="#"></a>
+              <a class="main-nav__link  search" href="#"></a>
+              <form class="find">
+                <input type="search" placeholder="Что ищем?">
+              </form>
             </li>
             <li class="user-block__item">
-              <a class="login" href="#">Вход</a>
+              <a class="main-nav__link  login" href="#">Вход</a>
             </li>
             <li class="user-block__item">
-              <a class="cart  cart-full" href="#">2 товара</a>
+              <a class="main-nav__link  cart  cart-full" href="#">2 товара</a>
             </li>
           </ul>
         </div>
@@ -56,7 +66,59 @@
         </ul>
         <h1>Сливочное мороженое</h1>
       </section>
-      <form action="https://echo.htmlacademy.ru" method="post"><form>
+      <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="form-title">Сортировка:</legend>
+          <select class="sorting" name="sort">
+            <option class="sorting-item" value="popularity">по популярности</option>
+            <option class="sorting-item" value="popularity">сначала недорогие
+            </option>
+            <option class="sorting-item" value="popularity">сначала дорогие
+            </option>
+            <option class="sorting-item" value="popularity">по жирности
+            </option>
+          </select>
+        </fieldset>
+        <fieldset>
+        <legend class="form-title">Цена: 100 руб. – 500 руб.</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="form-title">Жирность:</legend>
+          <div class="fieldset-inner">
+            <input type="radio" id="item-1" name="fat" value="0">
+            <label for="item-1">0%</label>
+            <input type="radio" id="item-2" name="fat" value="up to 10" checked>
+            <label for="item-2">до 10%</label>
+            <input type="radio" id="item-3" name="fat" value="up to 30">
+            <label for="item-3">до 30%</label>
+            <input type="radio" id="item-4" name="fat" value="more then 30">
+            <label for="item-4">выше 30%</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="form-title">Наполнители:</legend>
+          <div class="fieldset-inner">
+            <input type="checkbox" id="item-5" name="chokko" checked>
+            <label for="item-5">шоколадные</label>
+            <input type="checkbox" id="item-6" name="sugar" checked>
+            <label for="item-6">сахарные присыпки</label>
+            <input type="checkbox" id="item-7" name="fruit">
+            <label for="item-7">фрукты</label>
+            <input type="checkbox" id="item-8" name="syrup">
+            <label for="item-8">сиропы</label>
+            <input type="checkbox" id="item-9" name="jam">
+            <label for="item-9">джемы</label>
+          </div>
+        </fieldset>
+        <input class="btn-form" type="submit" value="Применить">
+      <form>
       <div class="card-layout">
         <article class="card">
           <img class="card__image" src="img/card-1.jpg" width="200" height="200" alt="orange">
@@ -74,7 +136,7 @@
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card  card-active">
           <img class="card__image" src="img/card-3.jpg" width="200" height="200" alt="strawberry">
           <div class="card__price">355<span></span>/кг</div>
           <p class="card__description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</p>
