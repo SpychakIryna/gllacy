@@ -26,10 +26,10 @@
               </ul>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#"><span>Доставка и оплата</span></a>
+              <a class="main-nav__link" href="#">Доставка и оплата<span></span></a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#"><span>О Компании</span></a>
+              <a class="main-nav__link" href="#">О Компании<span></span></a>
             </li>
           </ul>
         </nav>
@@ -43,9 +43,44 @@
             </li>
             <li class="user-block__item">
               <a class="main-nav__link  login" href="#">Вход</a>
+              <div class="login-block">
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input type="text" name="login" placeholder="Электронная почта">
+                  <input type="password"  name="password" placeholder="Пароль">
+                  <button class="btn" type="submit">Войти</button>
+                  <div class="info-inner">
+                    <a href="#">Забыл пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </form>
+              </div>
             </li>
             <li class="user-block__item">
               <a class="main-nav__link  cart  cart-full" href="#">2 товара</a>
+              <div class="booking  clearfix">
+                <table class="booking__table">
+                  <tbody>
+                    <tr>
+                      <td class="booking__cancel"></td>
+                      <td class="booking__picture"></td>
+                      <td class="booking__description">Пломбир с апельсиновым джемом</td>
+                      <td class="booking__price">1,5 кг х <span>200 руб.</span></td>
+                      <td class="booking__total">300руб.</td>
+                    </tr>
+                    <tr>
+                      <td class="booking__cancel"></td>
+                      <td class="booking__picture"></td>
+                      <td class="booking__description">Клубничный пломбир с присыпкой  из белого шоколада</td>
+                      <td class="booking__price">1,5 кг х <span>300 руб.</span></td>
+                      <td class="booking__total">450руб.</td>
+                    </tr>
+                    <tr>
+                      <td class="last-row" colspan="5">Итого: 750 руб.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="btn  booking__btn" href="#">Оформить заказ</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -117,7 +152,7 @@
             <label for="item-9">джемы</label>
           </div>
         </fieldset>
-        <input class="btn-form" type="submit" value="Применить">
+        <input class="filter-btn" type="submit" value="Применить">
       <form>
       <div class="card-layout">
         <article class="card">
@@ -216,15 +251,13 @@
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
-      </div>
-      <div class="btn-pages">
-        <ul>
-          <li><span class="btn-active">1</span></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-        </ul>
+          <ul class="btn-pages">
+            <li class="btn-pages__item"><span class="btn-pages__item--active">1</span></li>
+            <li class="btn-pages__item"><a class="btn-pages__link" href="#">2</a></li>
+            <li class="btn-pages__item"><a class="btn-pages__link" href="#">3</a></li>
+            <li class="btn-pages__item"><a class="btn-pages__link" href="#">4</a></li>
+            <li class="btn-pages__item"><a class="btn-pages__link" href="#">5</a></li>
+          </ul>
       </div>
     </main>
     <footer class="main-footer">
@@ -235,15 +268,11 @@
           <a class="social-btn  social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn  social-btn-vk" href="#">Вконтакте</a>
         </div>
-        <div class="footer-providers  clearfix">
-          <div class="left-field">
+        <div class="footer-providers">
             <a class="providers" href="#">Для поставщиков</a>
             <a class="" href="#">О производстве </a>
-          </div>
-          <div class="right-field">
             <a class="" href="#">Наши документы</a>
             <a class="" href="#">Экологические стандарты</a>
-          </div>
         </div>
         <div class="footer-copyright">
           <a href="#" class="logo-academy">
