@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
-    <header class="main-header">
-      <div class="container  clearfix">
-        <a class="index-logo" href="index.html">
-          <img src="img\logo.png" width="154" height="64" alt="logo">
+    <div class="container  clearfix">
+      <header class="main-header">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" width="154" height="64" alt="logo">
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item  active">
-              <a class="main-nav__link  current" href="#">Каталог</a>
+        <nav class="main-nav  clearfix">
+          <ul class="site-navigation">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link  current-page">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новинки</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
@@ -25,26 +25,24 @@
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Доставка и оплата<span></span></a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Доставка и оплата<span></span></a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О Компании<span></span></a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">О Компании<span></span></a>
             </li>
           </ul>
-        </nav>
-        <div class="user-block">
-          <ul class="user-block__list">
+          <ul class="user-block">
             <li class="user-block__item">
-              <a class="main-nav__link  search" href="#"></a>
-              <form class="find">
+              <a class="user-block__link  search" href="#"></a>
+              <form class="search-form">
                 <input type="search" placeholder="Что ищем?">
               </form>
             </li>
             <li class="user-block__item">
-              <a class="main-nav__link  login" href="#">Вход</a>
+              <a class="user-block__link  login" href="#">Вход</a>
               <div class="login-block">
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <form action="https://echo.htmlacademy.ru" method="post">
                   <input type="text" name="login" placeholder="Электронная почта">
                   <input type="password"  name="password" placeholder="Пароль">
                   <button class="btn" type="submit">Войти</button>
@@ -56,19 +54,23 @@
               </div>
             </li>
             <li class="user-block__item">
-              <a class="main-nav__link  cart  cart-full" href="#">2 товара</a>
+              <a class="user-block__link  cart  cart--full" href="#">2 товара</a>
               <div class="booking  clearfix">
                 <table class="booking__table">
                   <tbody>
                     <tr>
-                      <td class="booking__cancel"></td>
+                      <td class="booking__cancel">
+                        <button class="modal-block-close" type="button" title="Удалить">Удалить</button>
+                      </td>
                       <td class="booking__picture"></td>
                       <td class="booking__description">Пломбир с апельсиновым джемом</td>
                       <td class="booking__price">1,5 кг х <span>200 руб.</span></td>
                       <td class="booking__total">300руб.</td>
                     </tr>
                     <tr>
-                      <td class="booking__cancel"></td>
+                      <td class="booking__cancel">
+                        <button class="modal-block-close" type="button" title="Удалить">Удалить</button>
+                      </td>
                       <td class="booking__picture"></td>
                       <td class="booking__description">Клубничный пломбир с присыпкой  из белого шоколада</td>
                       <td class="booking__price">1,5 кг х <span>300 руб.</span></td>
@@ -83,9 +85,12 @@
               </div>
             </li>
           </ul>
+        </nav>
+        <div class="timetable">
+          С 10 до 20, ежедневно <span><br>8 812 450-25-25</span>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <main class="container">
       <section class="catalog-title">
         <ul class="breadcrumbs">
@@ -153,12 +158,12 @@
           </div>
         </fieldset>
         <input class="filter-btn" type="submit" value="Применить">
-      <form>
+      </form>
       <div class="card-layout">
         <article class="card">
           <img class="card__image" src="img/card-1.jpg" width="200" height="200" alt="orange">
           <div class="card__price">310<span></span>/кг</div>
-          <p class="card__description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <p class="card__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -166,7 +171,7 @@
         <article class="card">
           <img class="card__image" src="img/card-2.jpg" width="200" height="200" alt="chocolate">
           <div class="card__price">380<span></span>/кг</div>
-          <p class="card__description" href="#">Сливочно-кофейное с кусочками шоколада</p>
+          <p class="card__description">Сливочно-кофейное с кусочками шоколада</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -174,7 +179,7 @@
         <article class="card  card-active">
           <img class="card__image" src="img/card-3.jpg" width="200" height="200" alt="strawberry">
           <div class="card__price">355<span></span>/кг</div>
-          <p class="card__description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <p class="card__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -182,7 +187,7 @@
         <article class="card">
           <img class="card__image" src="img/card-4.jpg" width="200" height="200" alt="caramel">
           <p class="card__price">415<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочное крем-брюле с карамельной подливкой</p>
+          <p class="card__description">Сливочное крем-брюле с карамельной подливкой</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -190,7 +195,7 @@
         <article class="card">
           <img class="card__image" src="img/card-5.jpg" width="200" height="200" alt="lingonberry">
           <div class="card__price">325<span></span>/кг</div>
-          <p class="card__description" href="#">Сливочное с брусничным джемом</p>
+          <p class="card__description">Сливочное с брусничным джемом</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -198,7 +203,7 @@
         <article class="card">
           <img class="card__image" src="img/card-6.jpg" width="200" height="200" alt="blueberry">
           <p class="card__price">410<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочно-черничное с цельными ягодами черники</p>
+          <p class="card__description">Сливочно-черничное с цельными ягодами черники</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -206,7 +211,7 @@
         <article class="card">
           <img class="card__image" src="img/card-7.jpg" width="200" height="200" alt="limon">
           <p class="card__price">375<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочно-лимонное с карамельной присыпкой</p>
+          <p class="card__description">Сливочно-лимонное с карамельной присыпкой</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -214,7 +219,7 @@
         <article class="card">
           <img class="card__image" src="img/card-8.jpg" width="200" height="200" alt="chocolate">
           <p class="card__price">320<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочное с шоколадной стружкой</p>
+          <p class="card__description">Сливочное с шоколадной стружкой</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -222,7 +227,7 @@
         <article class="card">
           <img class="card__image" src="img/card-9.jpg" width="200" height="200" alt="vanilla">
           <p class="card__price">440<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочно-ванильное с кусочками шоколада</p>
+          <p class="card__description">Сливочно-ванильное с кусочками шоколада</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -230,7 +235,7 @@
         <article class="card">
           <img class="card__image" src="img/card-10.jpg" width="200" height="200" alt="menthol">
           <p class="card__price">435<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочное с ментоловым сиропом</p>
+          <p class="card__description">Сливочное с ментоловым сиропом</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -238,7 +243,7 @@
         <article class="card">
           <img class="card__image" src="img/card-11.jpg" width="200" height="200" alt="black chocolate">
           <p class="card__price">355<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочное с кусочками черного шоколада</p>
+          <p class="card__description">Сливочное с кусочками черного шоколада</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
@@ -246,18 +251,22 @@
         <article class="card">
           <img class="card__image" src="img/card-12.jpg" width="200" height="200" alt="mint">
           <p class="card__price">420<span></span>/кг</p>
-          <p class="card__description" href="#">Сливочное с мятным сиропом</p>
+          <p class="card__description">Сливочное с мятным сиропом</p>
           <div class="btn-inner">
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
-          <ul class="btn-pages">
-            <li class="btn-pages__item"><span class="btn-pages__item--active">1</span></li>
+        <div class="btn-pages">
+          <ul class="btn-pages__list">
+            <li class="btn-pages__item"><a class="btn-pages__link  btn-pages__link--active">1</a></li>
             <li class="btn-pages__item"><a class="btn-pages__link" href="#">2</a></li>
             <li class="btn-pages__item"><a class="btn-pages__link" href="#">3</a></li>
             <li class="btn-pages__item"><a class="btn-pages__link" href="#">4</a></li>
             <li class="btn-pages__item"><a class="btn-pages__link" href="#">5</a></li>
           </ul>
+          <button class="btn-pages-prev  btn-pages-disabled" type="button" >Назад</button>
+          <button class="btn-pages-next" type="button">Вперёд</button>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
@@ -269,10 +278,20 @@
           <a class="social-btn  social-btn-vk" href="#">Вконтакте</a>
         </div>
         <div class="footer-providers">
-            <a class="providers" href="#">Для поставщиков</a>
-            <a class="" href="#">О производстве </a>
-            <a class="" href="#">Наши документы</a>
-            <a class="" href="#">Экологические стандарты</a>
+          <ul class="footer-providers__list">
+            <li class="footer-providers__item">
+              <a class="footer-providers__link first-provider" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-providers__item">
+              <a class="footer-providers__link" href="#">О производстве </a>
+            </li>
+            <li class="footer-providers__item">
+              <a class="footer-providers__link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-providers__item">
+              <a class="footer-providers__link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
         </div>
         <div class="footer-copyright">
           <a href="#" class="logo-academy">

@@ -13,14 +13,14 @@
     <input type="radio" id="btn-3" name="toggle">
     <div class="wrapper">
       <div class="container">
-        <header class="main-header  clearfix">
+        <header class="main-header">
           <div class="logo">
             <img src="img/logo.png" width="154" height="64" alt="logo">
           </div>
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Каталог<span></span></a>
+          <nav class="main-nav  clearfix">
+            <ul class="site-navigation">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Каталог<span></span></a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новинки</a></li>
                   <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
@@ -29,26 +29,24 @@
                   <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Доставка и оплата<span></span></a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">Доставка и оплата<span></span></a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">О Компании<span></span></a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">О Компании<span></span></a>
               </li>
             </ul>
-          </nav>
-          <div class="user-block">
-            <ul class="user-block__list">
+            <ul class="user-block">
               <li class="user-block__item">
-                <a class="search" href="#"></a>
-                <form class="find">
+                <a class="user-block__link  search" href="#"></a>
+                <form class="search-form">
                   <input type="search" placeholder="Что ищем?">
                 </form>
               </li>
               <li class="user-block__item">
-                <a class="login" href="#">Вход</a>
+                <a class="user-block__link  login" href="#">Вход</a>
                 <div class="login-block">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <form action="https://echo.htmlacademy.ru" method="post">
                     <input type="text" name="login" placeholder="Электронная почта">
                     <input type="password"  name="password" placeholder="Пароль">
                     <button class="btn" type="submit">Войти</button>
@@ -60,9 +58,12 @@
                 </div>
               </li>
               <li class="user-block__item">
-                <a class="cart" href="#">Пусто</a>
+                <a class="user-block__link  cart" href="#">Пусто</a>
               </li>
             </ul>
+          </nav>
+          <div class="timetable">
+            С 10 до 20, ежедневно <span><br>8 812 450-25-25</span>
           </div>
         </header>
         <div class="slider">
@@ -83,9 +84,6 @@
             <label for="btn-2"></label>
             <label for="btn-3"></label>
           </div>
-          <div class="timetable">
-            С 10 до 20, ежедневно <span><br>8 812 450-25-25</span>
-          </div>
         </div>
       </div>
       <main class="container">
@@ -105,7 +103,7 @@
           <article class="card">
             <img class="card__image" src="img/card-1.jpg" width="200" height="200" alt="orange">
             <div class="card__price">310<span></span>/кг</div>
-            <p class="card__description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <p class="card__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             <div class="btn-inner">
               <a class="btn" href="#">Быстрый просмотр</a>
             </div>
@@ -113,7 +111,7 @@
           <article class="card">
             <img class="card__image" src="img/card-2.jpg" width="200" height="200" alt="chocolate">
             <div class="card__price">380<span></span>/кг</div>
-            <p class="card__description" href="#">Сливочно-кофейное с кусочками шоколада</p>
+            <p class="card__description">Сливочно-кофейное с кусочками шоколада</p>
             <div class="btn-inner">
               <a class="btn" href="#">Быстрый просмотр</a>
             </div>
@@ -121,7 +119,7 @@
           <article class="card">
             <img class="card__image" src="img/card-3.jpg" width="200" height="200" alt="strawberry">
             <div class="card__price">355<span></span>/кг</div>
-            <p class="card__description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <p class="card__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
             <div class="btn-inner">
               <a class="btn" href="#">Быстрый просмотр</a>
             </div>
@@ -129,7 +127,7 @@
           <article class="card">
             <img class="card__image" src="img/card-4.jpg" width="200" height="200" alt="caramel">
             <p class="card__price">415<span></span>/кг</p>
-            <p class="card__description" href="#">Сливочное крем-брюле с карамельной подливкой</p>
+            <p class="card__description">Сливочное крем-брюле с карамельной подливкой</p>
             <div class="btn-inner">
               <a class="btn" href="#">Быстрый просмотр</a>
             </div>
@@ -163,7 +161,7 @@
         </div>
       </main>
       <footer class="main-footer">
-        <div class="map">
+        <div id="yandex-map" class="map">
           <div class="contact">
             <div class="contact__adress">
               <p>Адрес главного офиса и<br>офлайн магазина:</p>
@@ -174,7 +172,7 @@
               <p><span>8 812 450-25-25</span></p>
               <p>(с 10 до 20 ежедневно)</p>
             </div>
-            <a class="btn" href="#">Форма обратной связи</a>
+            <a class="btn  feedback" href="#">Форма обратной связи</a>
           </div>
         </div>
         <div class="container  clearfix">
@@ -185,10 +183,20 @@
             <a class="social-btn  social-btn-vk" href="#">Вконтакте</a>
           </div>
           <div class="footer-providers">
-              <a class="providers" href="#">Для поставщиков</a>
-              <a class="" href="#">О производстве </a>
-              <a class="" href="#">Наши документы</a>
-              <a class="" href="#">Экологические стандарты</a>
+            <ul class="footer-providers__list">
+              <li class="footer-providers__item">
+                <a class="footer-providers__link first-provider" href="#">Для поставщиков</a>
+              </li>
+              <li class="footer-providers__item">
+                <a class="footer-providers__link" href="#">Наши документы</a>
+              </li>
+              <li class="footer-providers__item">
+                <a class="footer-providers__link" href="#">О производстве </a>
+              </li>
+              <li class="footer-providers__item">
+                <a class="footer-providers__link" href="#">Экологические стандарты</a>
+              </li>
+            </ul>
           </div>
           <div class="footer-copyright">
             <a href="#" class="logo-academy">
@@ -209,5 +217,7 @@
         </form>
       </div>
     </div>
+    <script src="js/modal-block.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=m1Byi0TBubH5Tx2V8xlXGRGt8iJAKBAa&amp;height=430&amp&id=yandex-map;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
 </html>
