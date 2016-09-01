@@ -389,11 +389,11 @@ input[type="search"] {
 
 .info-inner a {
   display: block;
+  padding: 3px 0px;
+  margin: 0px;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
-  padding: 3px 0px;
-  margin: 0px;
   text-decoration: underline;
 }
 
@@ -442,19 +442,19 @@ input[type="search"] {
   position: absolute;
   top: 50px;
   right: 0px;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
+  z-index: 200;
   width: 510px;
   padding-top: 16px;
   padding-left: 18px;
   padding-right: 12px;
   padding-bottom: 12px;
   margin: 0px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333333;
   background-color: #f8f7f4;
   border-radius: 10px;
-  color: #333333;
-  z-index: 200;
 }
 
 .user-block__item:hover .booking {
@@ -464,10 +464,10 @@ input[type="search"] {
 .booking__table {
   float: right;
   width: 510px;
-  border-collapse: collapse;
-  border-spacing: 0;
   padding: 0;
   margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 tr {
@@ -540,10 +540,10 @@ tr:nth-of-type(2) .booking__picture {
 }
 
 .last-row {
+  padding: 15px 0px;
   font-size: 15px;
   font-weight: 700;
   text-align: right;
-  padding: 15px 0px;
   border-top: 1px solid #cacac7;
 }
 
@@ -676,49 +676,45 @@ input[type="radio"] {
   padding: 0;
 }
 
-.advantages-left {
+.advantages-left,
+.advantages-right {
   float: left;
   width: 384px;
-  font-size: 0px;
-  margin-right: 20px;
   padding: 18px;
   padding-top: 15px;
   padding-bottom: 24px;
+  font-size: 0px;
   text-align: right;
-  background: url("../img/raspberry.jpg") no-repeat;
   border-radius: 15px;
+}
+
+.advantages-left {
+  margin-right: 20px;
+  background: url("../img/raspberry.jpg") no-repeat;
 }
 
 .advantages-right {
   float: right;
-  width: 384px;
-  font-size: 0px;
-  padding: 18px;
-  padding-top: 15px;
-  padding-bottom: 24px;
-  margin: 0px;
-  text-align: right;
   background: url("../img/choko.jpg") no-repeat;
-  border-radius: 15px;
 }
 
 .advantages__title {
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: 700;
   padding: 0px;
   margin: 0px;
   margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
   text-align: left;
 }
 
 .advantages__description {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
   padding: 0px;
   margin: 0px;
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -765,62 +761,62 @@ input[type="radio"] {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 50%;
   padding: 0px;
   margin: 0px;
+  border-radius: 50%;
 }
 
 .card__price {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
   padding: 0px;
   margin: 0px;
   margin-top: -60px;
   margin-bottom: 15px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 .card__price span {
   display: inline-block;
   width: 31px;
   height: 36px;
+  margin: 0px 1px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -216px -9px;
-  margin: 0px 1px;
 }
 
 .card__description {
+  padding: 0px 5px;
+  padding-top: 12px;
+  margin: 0px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #fff;
   text-align: center;
-  padding: 0px 5px;
-  padding-top: 12px;
-  margin: 0px;
   text-decoration: underline;
 }
 
-.btn-inner {
+.card__btn {
   display: none;
   position: absolute;
-  font-size: 0px;
   top: 0px;
   left: -10px;
+  z-index: 200;
   width: 220px;
   min-height: 60px;
-  background-color: rgba(255,255,255,0.3);
   padding: 0px;
   padding-top: 303px;
   margin: 0px;
-  border-radius: 5px;
+  font-size: 0px;
   text-align: center;
-  z-index: 200;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 5px;
 }
 
-.card:hover .btn-inner {
+.card:hover .card__btn {
   display: block;
 }
 
@@ -830,49 +826,46 @@ input[type="radio"] {
 
 .features {
   padding: 26px 18px;
+  margin-bottom: 40px;
   color: #323232;
   background: #f0e4ce url("../img/pattern.jpg");
   border-radius: 15px;
-  /*margin-top: 27px;*/
-  margin-bottom: 40px;
 }
 
 .features__title {
+  padding: 0;
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  padding: 0;
-  margin: 0;
 }
 
 .features__list {
-  list-style: none;
+  width: 820px;
   padding: 0;
   margin: 0;
   text-align: left;
-  width: 820px;
   -webkit-columns: 2;
      -moz-columns: 2;
           columns: 2;
   -webkit-column-width: 345px;
      -moz-column-width: 345px;
           column-width: 345px;
+  list-style: none;
 }
 
 .features__item {
   display: inline-block;
   position: relative;
   min-height: 110px;
-  /*width: 350px;*/
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
   padding: 0px;
   padding-left: 59px;
   margin: 0px;
   margin-top: 21px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
   vertical-align: top;
-  /*margin-right: 20px;*/
 }
 
 .features__item::before {
@@ -904,9 +897,9 @@ input[type="radio"] {
 }
 
 .news {
-  padding: 0px;
+  padding: 0;
   padding-bottom: 10px;
-  margin: 0px;
+  margin: 0;
 }
 
 .news__left {
@@ -915,15 +908,15 @@ input[type="radio"] {
   width: 370px;
   padding: 20px;
   padding-right: 28px;
-  margin: 0px;
+  margin: 0;
   margin-right: 20px;
-  border-radius: 15px;
   background-image: url("../img/bg-strawberry.jpg");
+  border-radius: 15px;
 }
 
 .news__left p {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
@@ -935,7 +928,7 @@ input[type="radio"] {
   float: left;
   min-height: 180px;
   padding: 5px;
-  margin: 0px;
+  margin: 0;
   border-radius: 15px;
   background: url("../img/post.jpg") 50% 50%;
 }
@@ -968,8 +961,8 @@ input[type="radio"] {
 }
 
 .last-added {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .last-added a {
@@ -977,21 +970,21 @@ input[type="radio"] {
   line-height: 30px;
   font-weight: 700;
   color: #353535;
+  background-color: rgba(255,255,255,0.8);
   text-decoration: underline;
   cursor: pointer;
-  background-color: rgba(255,255,255,0.8);
 }
 
 .news__right input[type="email"] {
   width: 199px;
+  padding: 9px 14px;
+  margin: 0;
+  margin-right: 10px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #999999;
   border: 1px solid #d3d3d2;
-  padding: 9px 14px;
-  margin: 0px;
-  margin-right: 10px;
   border-radius: 5px;
   outline: none;
 }
@@ -1002,62 +995,60 @@ input[type="radio"] {
 }
 
 .catalog-title {
-  padding: 25px 0px;
-  margin: 0px;
+  padding: 25px 0;
+  margin: 0;
 }
 
 .catalog-title h1 {
+  padding: 0;
+  margin: 0;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   text-align: left;
-  padding: 0px;
-  margin: 0px;
 }
 
 .breadcrumbs {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
-  font-size: 0px;
 }
 
-.breadcrumbs-item {
+.breadcrumbs__item {
   display: inline-block;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
   padding: 0px;
   margin: 0px;
   margin-right: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
   vertical-align: top;
 }
 
-.breadcrumbs-item a {
+.breadcrumbs__link {
   display: block;
-
-  color: #fff;
   padding: 0px;
   margin: 0px;
+  color: #fff;
 }
 
-.breadcrumbs-item a:hover,
-.breadcrumbs-item a:active {
+.breadcrumbs__link:hover,
+.breadcrumbs_link:active {
   color: #ffbc9e;
 }
 
-.breadcrumbs-current a {
+.breadcrumbs__current-link {
   cursor: default;
   text-decoration: none;
 }
 
-.breadcrumbs-current a:hover,
-.breadcrumbs-current a:active {
+.breadcrumbs__current-link:hover,
+.breadcrumbs__current-link:active {
   color: #fff;
 }
 
 .form-filter {
-  width: 860px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,8 +1061,9 @@ input[type="radio"] {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0px;
-  margin: 0px;
+  width: 860px;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1079,17 +1071,17 @@ input[type="radio"] {
 }
 
 .form-title {
-  color: #fff;
-  outline: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-left: 14px;
   margin-bottom: 6px;
+  color: #fff;
+  outline: none;
 }
 
 fieldset {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 15px;
   border: none;
 }
@@ -1097,12 +1089,12 @@ fieldset {
 .sorting {
   width: 192px;
   height: 36px;
+  padding: 0 12px;
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   background: rgba(255,255,255,0.2);
   border-radius: 20px;
-  padding: 0 12px;
-  margin: 0px;
   border: none;
   outline: none;
 }
@@ -1112,21 +1104,21 @@ fieldset {
   background-color: #fff;
 }
 
-.sorting-item {
-  padding: 0px;
-  margin: 0px;
+.sorting__item {
+  padding: 0;
+  margin: 0;
   border: none;
   outline: none;
 }
 
 .range-controls {
-  width: 188px;
   position: relative;
+  width: 188px;
   height: 20px;
   padding-top: 16px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0px;
+  margin: 0;
   border-radius: 20px;
   background: rgba(255,255,255,0.2);
 }
@@ -1148,9 +1140,9 @@ fieldset {
   top: 8px;
   width: 20px;
   height: 20px;
-  cursor: pointer;
-  border-radius: 50%;
   background: rgba(255,255,255,1);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .range-controls .toggle-min {
@@ -1163,30 +1155,30 @@ fieldset {
 
 .fieldset-inner {
   padding: 9px 14px;
-  margin: 0px;
-  border-radius: 20px;
+  margin: 0;
   background: rgba(255,255,255,0.2);
+  border-radius: 20px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   display: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   position: relative;
   display: inline-block;
+  padding: 0;
+  padding-left: 28px;
+  margin: 0;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #fff;
-  padding: 0px;
-  padding-left: 28px;
-  margin: 0px;
-  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -1196,7 +1188,7 @@ input[type="checkbox"] + label {
 
 input[type="radio"] + label:last-child,
 input[type="checkbox"] + label:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 input[type="radio"] + label::before {
@@ -1204,7 +1196,7 @@ input[type="radio"] + label::before {
   content: "";
   position: absolute;
   top: -1px;
-  left: 0px;
+  left: 0;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -1228,7 +1220,7 @@ input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: -1px;
-  left: 0px;
+  left: 0;
   width: 18px;
   height: 18px;
   border-radius: 20%;
@@ -1240,7 +1232,7 @@ input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: -1px;
-  left: 0px;
+  left: 0;
   width: 20px;
   height: 20px;
   background: url("../img/sprite.png");
@@ -1260,28 +1252,28 @@ input[type="checkbox"] + label:active::before {
 
 .filter-btn {
   display: block;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: #fff;
   width: 144px;
   height: 34px;
   padding: 7px 16px;
   margin: 0px;
   margin-top: 22px;
   margin-bottom: 15px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background-color: rgba(255,255,255,0.2);
   text-decoration: none;
   border: 2px solid #fff;
   border-radius: 100px;
   cursor: pointer;
   outline: none;
-  background-color: rgba(255,255,255,0.2);
 }
 
 .filter-btn:hover {
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
   border: none;
 }
 
@@ -1310,7 +1302,7 @@ input[type="checkbox"] + label:active::before {
   margin-bottom: 17px;
 }
 
-.card-active .btn-inner {
+.card-active .card__btn {
   display: block;
   text-decoration: none;
 }
@@ -1328,10 +1320,10 @@ input[type="checkbox"] + label:active::before {
 }
 
 .btn-pages__list {
-  padding: 0 22px;
-  margin: 0px;
-  font-size: 0px;
   min-width: 146px;
+  padding: 0 22px;
+  margin: 0;
+  font-size: 0;
   list-style: none;
 }
 
@@ -1341,13 +1333,12 @@ input[type="checkbox"] + label:active::before {
   line-height: 18px;
   font-weight: 500;
   vertical-align: middle;
-  /*text-align: center;*/
 }
 
 .btn-pages__link {
   display: block;
   padding: 4px 8px;
-  margin: 0px 2px;
+  margin: 0 2px;
   color: #fff;
   text-decoration: none;
   border-radius: 50%;
@@ -1392,29 +1383,27 @@ input[type="checkbox"] + label:active::before {
 }
 
 .btn-pages-disabled {
-  left: 0px;
+  left: 0;
   opacity: 0.2;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 .btn-pages-next {
-  right: 0px;
+  right: 0;
 }
 
 .main-footer {
   position: relative;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-top: 30px;
 }
 
 .map {
-  /*position: relative;
-  width: 900px;*/
   height: 430px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   background: url("../img/map.jpg") center 0 no-repeat;
 }
 
@@ -1422,22 +1411,22 @@ input[type="checkbox"] + label:active::before {
   position: absolute;
   top: 60px;
   right: 50%;
-  background-color: #fff;
-  border-radius: 15px;
+  z-index: 200;
+  padding: 30px 25px;
+  margin: 0;
+  margin-right: -430px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #323232;
-  padding: 30px 25px;
-  margin: 0px;
-  margin-right: -430px;
-  z-index: 200;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .contact p {
   width: 225px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .contact span {
@@ -1447,14 +1436,14 @@ input[type="checkbox"] + label:active::before {
 }
 
 .contact__adress {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: ;
   margin-bottom: 18px;
 }
 
 .contact__phone {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .contact__phone span {
@@ -1475,13 +1464,13 @@ input[type="checkbox"] + label:active::before {
 
 .footer-social {
   float: left;
-  font-size: 0px;
   width: 200px;
-  padding: 0px;
+  padding: 0;
   padding-top: 15px;
   padding-botoom: 7px;
-  margin: 0px;
+  margin: 0;
   margin-right: 55px;
+  font-size: 0;
   text-align: left;
 }
 
@@ -1489,18 +1478,17 @@ input[type="checkbox"] + label:active::before {
   display: inline-block;
   width: 32px;
   height: 32px;
-  font-size: 0px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-right: 10px;
-  text-decoration: none;
+  font-size: 0;
   vertical-align: middle;
-  border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.5);
-  /*background-color: rgba(255,255,255,0.8);*/
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   opacity: 0.8;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.5);
+  text-decoration: none;
 }
 
 .social-btn:hover {
@@ -1532,14 +1520,15 @@ input[type="checkbox"] + label:active::before {
 
 .footer-providers {
   float: left;
-  width: 330px;
-  padding: 15px 0px;
+  width: 360px;
+  padding: 14px 0;
   padding-bottom: 8px;
-  margin: 0px;
+  margin: 0;
 }
 
 .footer-providers__list {
-  padding: 0px;
+  padding: 0;
+  padding-left: 23px;
   margin: 0;
   font-size: 0;
   list-style: none;
@@ -1547,6 +1536,7 @@ input[type="checkbox"] + label:active::before {
 
 .footer-providers__item {
   display: inline-block;
+  min-width: 145px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -1556,13 +1546,10 @@ input[type="checkbox"] + label:active::before {
 .footer-providers__link {
   position: relative;
   display: block;
-  min-width: 100px;
-  padding: 0px;
-  padding-left: 30px;
+  padding: 0;
   margin: 0;
   color: #fff;
 }
-
 
 .footer-providers__link:hover {
   color: #ffbc9e;
@@ -1577,7 +1564,7 @@ input[type="checkbox"] + label:active::before {
   content: "";
   display: block;
   top: 3px;
-  left: 0px;
+  left: -23px;
   width: 15px;
   height: 13px;
   background-image: url("../img/sprite.png");
@@ -1588,24 +1575,38 @@ input[type="checkbox"] + label:active::before {
 .footer-copyright {
   float: right;
   min-width: 190px;
-  padding: 0px;
+  padding: 0;
   padding-left: 10px;
-  margin: 0px;
+  margin: 0;
   margin-left: 20px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
 }
 
-.logo-academy {
+.footer-copyright__logo {
   display: block;
   width: 108px;
   height: 38px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
-.link-academy {
+.footer-copyright__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-copyright p {
+  padding: 0;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.footer-copyright__link {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -1613,24 +1614,9 @@ input[type="checkbox"] + label:active::before {
   cursor: pointer;
 }
 
-.link-academy:hover {
+.footer-copyright__link:hover {
   color: #ffbc9e;
 }
-
-.logo-academy img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  padding: 0px;
-  margin: 0px;
-}
-
-.footer-copyright p {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 4px;
-}
-
 
 .modal-block {
   position: absolute;
@@ -1688,58 +1674,58 @@ input[type="checkbox"] + label:active::before {
 }
 
 .modal-block-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   color: #323232;
-  padding: 0px;
-  margin: 0px;
-  margin-bottom: 18px;
 }
 
 .message-form {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .message-form input {
   float: left;
   width: 237px;
+  padding: 9px 14px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-  font-family: "Roboto", "Arial", sans-serif;
-  padding: 9px 14px;
-  margin: 0px;
-  margin-bottom: 20px;
+  background-color: #fff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   outline: none;
-  background-color: #fff;
 }
 
 .message-form textarea {
   width: 100%;
   min-height: 154px;
+  padding: 12px 14px;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-  font-family: "Roboto", "Arial", sans-serif;
-  padding: 12px 14px;
-  margin: 0px;
-  margin-bottom: 25px;
+  background-color: #fff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   box-sizing: border-box;
   outline: none;
-  background-color: #fff;
 }
 
 .modal-block .btn {
   float: right;
   width: 140px;
   padding: 10px 24px;
-  margin: 0px;
+  margin: 0;
 }
