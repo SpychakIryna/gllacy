@@ -16,10 +16,10 @@
         <nav class="main-nav  clearfix">
           <ul class="site-navigation">
             <li class="site-navigation__item">
-              <a class="site-navigation__link  current-page">Каталог</a>
+              <a class="site-navigation__link  site-navigation__link--current">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новинки</a></li>
-                <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Сливочное</a></li>
+                <li class="sub-menu__item"><a class="sub-menu__link  sub-menu__link--current" href="catalog.html">Сливочное</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Щербеты</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фруктовый лед</a></li>
                 <li class="sub-menu__item"><a class="sub-menu__link" href="#">Мелорин</a></li>
@@ -35,7 +35,7 @@
           <ul class="user-block">
             <li class="user-block__item">
               <a class="user-block__link  search" href="#"></a>
-              <form class="search-form">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <input type="search" placeholder="Что ищем?">
               </form>
             </li>
@@ -109,15 +109,17 @@
       <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend class="form-title">Сортировка:</legend>
-          <select class="sorting" name="sort">
-            <option class="sorting__item" value="popularity">по популярности</option>
-            <option class="sorting__item" value="popularity">сначала недорогие
-            </option>
-            <option class="sorting__item" value="popularity">сначала дорогие
-            </option>
-            <option class="sorting__item" value="popularity">по жирности
-            </option>
-          </select>
+          <div class="sorting-inner">
+            <select class="sorting" name="sort">
+              <option class="sorting__item" value="popularity">по популярности</option>
+              <option class="sorting__item" value="popularity">сначала недорогие
+              </option>
+              <option class="sorting__item" value="popularity">сначала дорогие
+              </option>
+              <option class="sorting__item" value="popularity">по жирности
+              </option>
+            </select>
+          </div>
         </fieldset>
         <fieldset>
         <legend class="form-title">Цена: 100 руб. – 500 руб.</legend>
