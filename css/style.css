@@ -830,25 +830,36 @@ input[type="radio"] {
 }
 
 .card__btn {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: -10px;
-  z-index: 200;
+  /* display: none; */
+  /* position: absolute; */
+  /* top: 0px; */
+  /* left: -10px; */
+  /* z-index: 200; */
   width: 220px;
   min-height: 60px;
   padding: 0;
-  padding-top: 303px;
+  /* padding-top: 303px; */
   margin: 0;
-  font-size: 0;
+  /* font-size: 0; */
   text-align: center;
-  background-color: rgba(255,255,255,0.3);
+  /* background-color: rgba(255,255,255,0.3); */
   border-radius: 5px;
 }
 
+.card__btn>a {
+    opacity: 0;
+}
+
+
 .card:hover .card__btn {
   display: block;
+  background-color: rgba(255,255,255,0.3);
 }
+
+.card:hover a {
+    opacity: 1;
+}
+
 
 .card:hover .card__description {
   text-decoration: none;
